@@ -9,6 +9,7 @@ Example Mod Made For my Youtube Series How to Make a BTD6 Mod.
 
 ## Episodes
 Episode 1: [How to Make a BTD6 Mod and Tower](https://www.youtube.com/watch?v=G09bGRxPaNg)
+
 Episode 2: [How to Make a BTD6 Modded Upgrade](https://youtu.be/XngAF-21l4c)
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
