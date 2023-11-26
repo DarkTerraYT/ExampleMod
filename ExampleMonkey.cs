@@ -15,7 +15,7 @@ namespace ExampleMod
 
         public override int TopPathUpgrades => 0;
 
-        public override int MiddlePathUpgrades => 0;
+        public override int MiddlePathUpgrades => 1;
 
         public override int BottomPathUpgrades => 0;
 
