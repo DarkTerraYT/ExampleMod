@@ -12,4 +12,18 @@ Episode 1: [How to Make a BTD6 Mod and Tower](https://www.youtube.com/watch?v=G0
 
 Episode 2: [How to Make a BTD6 Modded Upgrade](https://youtu.be/XngAF-21l4c)
 
+Episode 3: [Mutlishot and Custom Behaviors](https://www.youtube.com/watch?v=BaL0LK_-g00)
+
+## Planned Topics
+All of the topics that haven't been covered
+
+Mod Customization
+Changing Tower's Textures
+Mod Publishing
+Using Paths++ to Extend Your/Already Existing Towers
+Using Paths++ to Extend Other Mod's Towers
+Importing Custom Models (No Custom Animations because those are too confusing for me to understand)
+Custom Bloons, Roundsets, and Game modes.
+Using Hooks and Harmony Patches to Improve Your mod.
+
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
