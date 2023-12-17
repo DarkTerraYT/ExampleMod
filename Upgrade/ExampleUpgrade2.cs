@@ -1,41 +1,40 @@
-﻿using BTD_Mod_Helper.Api.Towers;
+﻿using BTD_Mod_Helper.Api.Enums;
+using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using ExampleMod;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.Towers.Behaviors.Emissions;
 using Il2CppAssets.Scripts.Models.Towers.Projectiles.Behaviors;
 using Il2CppAssets.Scripts.Unity;
+using Il2CppSystem;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace ExampleMod.Upgrade
+namespace MeJacksonCompete.UpgradesOliver
 {
-    internal class ExampleUpgrade2 : ModUpgrade<ExampleMonkey>
+    internal class ThornSwarm : ModUpgrade<ExampleMonkey>
     {
-        public override int Path => MIDDLE; //You can use TOP, MIDDLE or BOTTOM
+        public override int Path => TOP;
 
-        public override int Tier => 2; // 1, 2, 3, 4 or 5
+        public override int Tier => 1;
 
-        public override int Cost => 965;
+        public override int Cost => 250;
 
-        public override string Description => "Adds Multishot + Cool Stuff";
+        public override string Description => "Shoots 8 thorns per shot instead of 5.";
+
+        public override string Icon => VanillaSprites.ThornSwarmUpgradeIcon;
 
         public override void ApplyUpgrade(TowerModel towerModel)
         {
+            var attackModel = towerModel.GetAttackModel();
             var weaponModel = towerModel.GetWeapon();
+            var projectileModel = weaponModel.projectile;
 
             weaponModel.emission = new ArcEmissionModel("ArcEmissionModel_", 3, 0, 25, null, false, false);
 
-            // Behaviors
-
-            // weaponModel.projectile.AddBehavior(new TrackTargetModel("TrackTargetModel_", 80f, true, true, 360f, false, 1f, false, false));
-            weaponModel.projectile.AddBehavior(Game.instance.model.GetTower("WizardMonkey", 2).GetWeapon().projectile.GetBehavior<TrackTargetModel>().Duplicate());
-            weaponModel.projectile.AddBehavior(new CashModel("CashModel_", 5, 5, 0, 0, false, false, false, false));
-            // weaponModel.projectile.AddBehavior(Game.instance.model.GetTower("BananaFarm").GetWeapon().projectile.GetBehavior<CashModel>().Duplicate());
-
-            weaponModel.projectile.AddBehavior<CreateProjectileOnExhaustFractionModel>(new("CreateProjectileOnExhaustFractionModel_", weaponModel.projectile.Duplicate(), new ArcEmissionModel("ArcEmissionModel_", 2, 0, 45, null, false, false), 0.5f, 0.33333f, false, false, false));
-            /*
-            var airburstModel = Game.instance.model.GetTower("DartMonkey", 5).GetWeapon().projectile.GetBehavior<CreateProjectileOnExhaustFractionModel>().Duplicate());
-            ariburstModel.projectile = weaponModel.projectile.Duplicate();
-            weaponModel.projectile.AddBehavior(airbustModel);
-            */
         }
     }
 }
