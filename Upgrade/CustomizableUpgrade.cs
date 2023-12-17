@@ -13,7 +13,7 @@ namespace ExampleMod.Upgrade
     {
         public override int Path => MIDDLE; //You can use TOP, MIDDLE or BOTTOM
 
-        public override int Tier => 2; // 1, 2, 3, 4 or 5
+        public override int Tier => 3; // 1, 2, 3, 4 or 5
 
         public override int Cost => ExampleMod.Cost;
 

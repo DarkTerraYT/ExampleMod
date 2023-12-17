@@ -13,9 +13,9 @@ namespace ExampleMod
 
         public override int Cost => 1050;
 
-        public override int TopPathUpgrades => 1;
+        public override int TopPathUpgrades => 0;
 
-        public override int MiddlePathUpgrades => 2;
+        public override int MiddlePathUpgrades => 3;
 
         public override int BottomPathUpgrades => 0;
 
