@@ -21,6 +21,8 @@ Episode 4: [Mod Customization](https://www.youtube.com/watch?v=Q9WmaHbzJns)
 
 Episode 5: [Changing Textures in Your Mod](https://youtu.be/CWKokuRz8Tg?si=EsWimSZ9viAZ74cs)
 
+Episode 6: [Publishing Your Mod](https://youtu.be/KY9iS3Jrkbs?si=p8xDJ79QcbqGh6vg)
+
 ## Planned Topics
 All of the topics that haven't been covered
 
