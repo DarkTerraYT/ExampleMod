@@ -26,8 +26,6 @@ Episode 6: [Publishing Your Mod](https://youtu.be/KY9iS3Jrkbs?si=p8xDJ79QcbqGh6v
 ## Planned Topics
 All of the topics that haven't been covered
 
-Mod Publishing
-
 Using Paths++ to Extend Your/Already Existing Towers
 
 Using Paths++ to Extend Other Mod's Towers
