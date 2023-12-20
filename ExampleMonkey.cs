@@ -1,5 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
+using ExampleMod.Display;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 
@@ -39,6 +40,9 @@ namespace ExampleMod
             // damage + pierce
             projectileModel.pierce = 10;
             projectileModel.GetDamageModel().damage = 4;
+
+            towerModel.ApplyDisplay<ExampleMonkeyDisplay>();
+            projectileModel.ApplyDisplay<ExampleProjectileDisplay>();
         }
     }
 }

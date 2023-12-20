@@ -2,7 +2,6 @@ using MelonLoader;
 using BTD_Mod_Helper;
 using ExampleMod;
 using BTD_Mod_Helper.Api.ModOptions;
-using Il2CppNinjaKiwi.NKMulti.IO;
 
 [assembly: MelonInfo(typeof(ExampleMod.ExampleMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
