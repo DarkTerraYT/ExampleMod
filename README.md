@@ -16,10 +16,10 @@ Episode 3: [Mutlishot and Custom Behaviors](https://www.youtube.com/watch?v=BaL0
 
 Episode 4: [Mod Customization](https://www.youtube.com/watch?v=Q9WmaHbzJns)
 
+Episode 5: [Changing Textures in Your Mod](https://youtu.be/CWKokuRz8Tg?si=EsWimSZ9viAZ74cs)
+
 ## Planned Topics
 All of the topics that haven't been covered
-
-Changing Tower's Textures
 
 Mod Publishing
 
