@@ -28,8 +28,6 @@ All of the topics that haven't been covered
 
 Using Paths++ to Extend Your/Already Existing Towers
 
-Using Paths++ to Extend Other Mod's Towers
-
 Extracting the Game's Textures
 
 Importing Custom Models (No Custom Animations because those are too confusing for me to understand)
