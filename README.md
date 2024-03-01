@@ -23,6 +23,8 @@ Episode 5: [Changing Textures in Your Mod](https://youtu.be/CWKokuRz8Tg?si=EsWim
 
 Episode 6: [Publishing Your Mod](https://youtu.be/KY9iS3Jrkbs?si=p8xDJ79QcbqGh6vg)
 
+Episode 7: [Custom Bloon, Round set & Game Mode](https://youtu.be/wP6sQZkOJv8)
+
 ## Planned Topics
 All of the topics that haven't been covered
 

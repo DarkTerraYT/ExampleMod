@@ -3,7 +3,7 @@ namespace ExampleMod;
 public static class ModHelperData
 {
     public const string WorksOnVersion = "39.0";
-    public const string Version = "1.0.0";
+    public const string Version = "1.7.0";
     public const string Name = "(Unofficial) Example Mod";
 
     public const string Description = "An Example Mod For my Youtube Series, look at the github for more info.";

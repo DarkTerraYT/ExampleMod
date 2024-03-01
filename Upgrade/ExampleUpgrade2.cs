@@ -28,7 +28,7 @@ namespace ExampleMod.Upgrade
 
             // weaponModel.projectile.AddBehavior(new TrackTargetModel("TrackTargetModel_", 80f, true, true, 360f, false, 1f, false, false));
             weaponModel.projectile.AddBehavior(Game.instance.model.GetTower("WizardMonkey", 2).GetWeapon().projectile.GetBehavior<TrackTargetModel>().Duplicate());
-            weaponModel.projectile.AddBehavior(new CashModel("CashModel_", 5, 5, 0, 0, false, false, false, false));
+            weaponModel.projectile.AddBehavior(new CashModel("CashModel_", 5, 5, 0, 0, false, false, false, false, true));
             // weaponModel.projectile.AddBehavior(Game.instance.model.GetTower("BananaFarm").GetWeapon().projectile.GetBehavior<CashModel>().Duplicate());
 
             weaponModel.projectile.AddBehavior<CreateProjectileOnExhaustFractionModel>(new("CreateProjectileOnExhaustFractionModel_", weaponModel.projectile.Duplicate(), new ArcEmissionModel("ArcEmissionModel_", 2, 0, 45, null, false, false), 0.5f, 0.33333f, false, false, false));
