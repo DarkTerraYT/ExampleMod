@@ -3,12 +3,14 @@ using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Api.Towers;
 using BTD_Mod_Helper.Extensions;
 using ExampleMod.Bloons;
+using Il2CppAssets.Scripts.Unity;
 using Il2CppAssets.Scripts.Unity.Display;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 
 namespace ExampleMod.Display
 {
@@ -69,5 +71,19 @@ namespace ExampleMod.Display
         public override float Scale => 1.25f;
 
         public override int Damage => 3;
+    }
+
+    internal class MegaJuggernautDisplay : ModDisplay
+    {
+        public override string BaseDisplay => Game.instance.model.GetTowerFromId("DartMonkey-500").GetWeapon().projectile.display.GUID;
+
+        public override void ModifyDisplayNode(UnityDisplayNode node)
+        {
+            for(int i = 0; i < node.GetMeshRenderers().Count; i++)
+            {
+                SetMeshTexture(node, "MegaJuggernautDiffuse", i);
+                SetMeshOutlineColor(node, Color.blue);
+            }
+        }
     }
 }

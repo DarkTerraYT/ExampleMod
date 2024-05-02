@@ -14,12 +14,6 @@ namespace ExampleMod
 
         public override int Cost => 1050;
 
-        public override int TopPathUpgrades => 0;
-
-        public override int MiddlePathUpgrades => 3;
-
-        public override int BottomPathUpgrades => 0;
-
         public override string Description => "Cool Tower Dude Yes";
 
         public override string DisplayName => "Example Monkey"; // This is by default Example Monkey as the Mod Helper automatically puts spaces in-between the uppercase letters in the class name, it is this way for Towers, Heroes, Upgrades, and Paragons
