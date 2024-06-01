@@ -25,16 +25,22 @@ Episode 6: [Publishing Your Mod](https://youtu.be/KY9iS3Jrkbs?si=p8xDJ79QcbqGh6v
 
 Episode 7: [Custom Bloon, Round set & Game Mode](https://youtu.be/wP6sQZkOJv8)
 
+Episode 8: [Paths++](https://youtu.be/TvQo3E6Shp4?si=11oXDRlwRNu7G8h)
+
+Episode 9: [Custom Models & Animations](https://youtu.be/x_s1-GuHlSQ?si=pTqSiYZH1IW8oIL2)
+
 ## Planned Topics
 All of the topics that haven't been covered
 
-Using Paths++ to Extend Your/Already Existing Towers
-
 Extracting the Game's Textures
 
-Importing Custom Models (No Custom Animations because those are too confusing for me to understand)
+Paragons
 
-Custom Bloons, Roundsets, and Game modes.
+Advanced Tower Guide
+
+Saving data to a JSON file
+
+Custom UI
 
 Using Hooks and Harmony Patches to Improve Your mod.
 
