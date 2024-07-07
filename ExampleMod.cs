@@ -6,6 +6,9 @@ using Il2CppAssets.Scripts.Simulation.Towers.Weapons;
 using BTD_Mod_Helper.Extensions;
 using BTD_Mod_Helper.Api;
 using UnityEngine;
+using Il2CppAssets.Scripts.Unity.UI_New.InGame;
+using Il2CppInterop.Runtime.InteropTypes.Arrays;
+using Il2CppAssets.Scripts.Models.Rounds;
 
 [assembly: MelonInfo(typeof(ExampleMod.ExampleMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
