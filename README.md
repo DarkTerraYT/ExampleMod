@@ -29,6 +29,8 @@ Episode 8: [Paths++](https://youtu.be/TvQo3E6Shp4?si=11oXDRlwRNu7G8h)
 
 Episode 9: [Custom Models & Animations](https://youtu.be/x_s1-GuHlSQ?si=pTqSiYZH1IW8oIL2)
 
+Episode 10: [Harmony Patches](https://youtu.be/GtBsijbfOvQ)
+
 ## Planned Topics
 All of the topics that haven't been covered
 
@@ -41,8 +43,6 @@ Advanced Tower Guide
 Saving data to a JSON file
 
 Custom UI
-
-Using Hooks and Harmony Patches to Improve Your mod.
 
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
