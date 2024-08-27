@@ -36,9 +36,7 @@ All of the topics that haven't been covered
 
 Extracting the Game's Textures
 
-Paragons
-
-Advanced Tower Guide
+Towers P2
 
 Saving data to a JSON file
 
