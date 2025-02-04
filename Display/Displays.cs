@@ -75,7 +75,7 @@ namespace ExampleMod.Display
 
     internal class MegaJuggernautDisplay : ModDisplay
     {
-        public override string BaseDisplay => Game.instance.model.GetTowerFromId("DartMonkey-500").GetWeapon().projectile.display.GUID;
+        public override string BaseDisplay => Game.instance.model.GetTowerFromId("DartMonkey-500").GetWeapon().projectile.display.AssetGUID;
 
         public override void ModifyDisplayNode(UnityDisplayNode node)
         {

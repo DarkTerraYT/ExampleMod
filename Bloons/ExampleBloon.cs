@@ -1,7 +1,6 @@
 ﻿using BTD_Mod_Helper.Api.Bloons;
 using BTD_Mod_Helper.Api.Enums;
 using BTD_Mod_Helper.Extensions;
-using Il2CppAssets.Scripts.Models.Bloons;
 using System.Collections.Generic;
 
 namespace ExampleMod.Bloons
@@ -14,7 +13,7 @@ namespace ExampleMod.Bloons
 
         //public override IEnumerable<string> DamageStates => ["DamageStateName", "DamageStateName2"];
 
-        public override void ModifyBaseBloonModel(BloonModel bloonModel)
+        public override void ModifyBaseBloonModel(Il2CppAssets.Scripts.Models.Bloons.BloonModel bloonModel)
         {
             bloonModel.RemoveAllChildren();
             bloonModel.AddToChildren(BloonType.Lead, 2);

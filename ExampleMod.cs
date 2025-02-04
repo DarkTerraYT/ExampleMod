@@ -5,10 +5,9 @@ using BTD_Mod_Helper.Api.ModOptions;
 using Il2CppAssets.Scripts.Simulation.Towers.Weapons;
 using BTD_Mod_Helper.Extensions;
 using BTD_Mod_Helper.Api;
-using UnityEngine;
-using Il2CppAssets.Scripts.Unity.UI_New.InGame;
-using Il2CppInterop.Runtime.InteropTypes.Arrays;
-using Il2CppAssets.Scripts.Models.Rounds;
+using ExampleMod.UI.Custom;
+using Il2CppAssets.Scripts.Unity;
+using BTD_Mod_Helper.Api.Components;
 
 [assembly: MelonInfo(typeof(ExampleMod.ExampleMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -17,6 +16,16 @@ namespace ExampleMod;
 
 public class ExampleMod : BloonsTD6Mod
 {
+    public override void OnMatchStart()
+    {
+        ModdedMonkeys.CreateMenu(Game.instance.model.towers.ToList());
+    }
+
+    public override void OnMatchEnd()
+    {
+        ModdedMonkeys.instance.Close();
+    }
+
     public override void OnApplicationStart()
     {
         ModHelper.Msg<ExampleMod>("ExampleMod loaded!");
@@ -68,5 +77,19 @@ public class ExampleMod : BloonsTD6Mod
             //tower.GetUnityDisplayNode().gameObject.GetComponent<Animator>().SetTrigger("Attack");
             tower.GetUnityDisplayNode().animationComponent.SetTrigger("Attack");
         }
+    }
+}
+
+public static class Ext
+{
+    public static void EnableAutoSizing(this ModHelperText text)
+    {
+        text.Text.enableAutoSizing = true;
+    }
+
+    public static void EnableAutoSizing(this ModHelperText text, float fontSizeMax)
+    {
+        text.Text.enableAutoSizing = true;
+        text.Text.fontSizeMax = fontSizeMax;
     }
 }
