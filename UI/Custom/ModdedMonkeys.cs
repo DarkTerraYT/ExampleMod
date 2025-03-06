@@ -7,6 +7,7 @@ using BTD_Mod_Helper.Extensions;
 using Il2CppAssets.Scripts.Models.Towers;
 using Il2CppAssets.Scripts.Models.TowerSets;
 using Il2CppAssets.Scripts.Unity.UI_New.InGame;
+using Il2CppInterop.Runtime.Attributes;
 using MelonLoader;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ using UnityEngine;
 
 namespace ExampleMod.UI.Custom
 {
-    [RegisterTypeInIl2Cpp]
+    [RegisterTypeInIl2Cpp(false)]
     internal class ModdedMonkeys : MonoBehaviour
     {
         public static ModdedMonkeys instance;
@@ -43,6 +44,7 @@ namespace ExampleMod.UI.Custom
             }));
         }
 
+        [HideFromIl2Cpp]
         public void OpenMenu(List<TowerModel> moddedTowers)
         {
             var towersPanel = mapRect.gameObject.AddModHelperPanel(new("ModdedMonkeysMenu", mapRect.rect.center.x, mapRect.rect.center.y, 780, 1560), VanillaSprites.MainBGPanelBlue);
@@ -61,6 +63,7 @@ namespace ExampleMod.UI.Custom
             }
         }
 
+        [HideFromIl2Cpp]
         string[] backgroundGuid(TowerSet set)
         {
             switch (set)

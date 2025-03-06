@@ -8,6 +8,9 @@ using BTD_Mod_Helper.Api;
 using ExampleMod.UI.Custom;
 using Il2CppAssets.Scripts.Unity;
 using BTD_Mod_Helper.Api.Components;
+using HarmonyLib;
+using Il2CppAssets.Scripts.Unity.UI_New.Main;
+using Il2CppAssets.Scripts.Models;
 
 [assembly: MelonInfo(typeof(ExampleMod.ExampleMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
@@ -19,6 +22,42 @@ public class ExampleMod : BloonsTD6Mod
     public override void OnMatchStart()
     {
         ModdedMonkeys.CreateMenu(Game.instance.model.towers.ToList());
+    }
+
+    public override void OnGameModelLoaded(GameModel model)
+    {
+        foreach (var bloon in model.bloons)
+        {
+            if (bloon.baseId == bloon.name)
+            {
+               ExampleGameMenu.baseModels.Add(bloon);
+            }
+            else
+            {
+                if (!ExampleGameMenu.bloonVarients.TryAdd(bloon.baseId, [bloon]))
+                {
+                    ExampleGameMenu.bloonVarients[bloon.baseId].Add(bloon);
+                }
+            }
+        }
+    }
+
+    [HarmonyPatch(typeof(MainMenu), nameof(MainMenu.Open))]
+    static class MainMenu_Open
+    {
+        public static void Postfix(MainMenu __instance)
+        {
+            ExampleGameMenuButton.CreateButton(__instance);
+        }
+    }
+
+    [HarmonyPatch(typeof(MainMenu), nameof(MainMenu.ReOpen))]
+    static class MainMenu_ReOpen
+    {
+        public static void Postfix(MainMenu __instance)
+        {
+            ExampleGameMenuButton.CreateButton(__instance);
+        }
     }
 
     public override void OnMatchEnd()
