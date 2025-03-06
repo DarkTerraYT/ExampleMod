@@ -20,6 +20,7 @@ namespace ExampleMod.UI.Custom
 
             var newBtn = buttonToCopy.gameObject.Duplicate();
             newBtn.transform.parent = buttonToCopy.parent;
+            newBtn.transform.localScale /= 2.5f;
             newBtn.name = "ExampleButton";
             var matchLocalPosition = newBtn.AddComponent<MatchLocalPosition>();
             matchLocalPosition.transformToCopy = buttonToCopy;
