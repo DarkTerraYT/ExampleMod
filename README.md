@@ -31,6 +31,10 @@ Episode 9: [Custom Models & Animations](https://youtu.be/x_s1-GuHlSQ?si=pTqSiYZH
 
 Episode 10: [Harmony Patches](https://youtu.be/GtBsijbfOvQ)
 
+Episode 11: [UI Part 1](https://youtu.be/8oMlZi8phiM?si=yeSfUBpybYMDAktk)
+
+Episode 12: [UI Part 2](https://youtu.be/tMy-_JhKes4?si=F9IKJ55cFvB2AN8e)
+
 ## Planned Topics
 All of the topics that haven't been covered
 
