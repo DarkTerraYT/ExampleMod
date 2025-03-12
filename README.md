@@ -38,9 +38,6 @@ Extracting the Game's Textures
 
 Towers P2
 
-Saving data to a JSON file
-
-Custom UI
-
+Saving Mod Data
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
