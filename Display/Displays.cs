@@ -39,7 +39,7 @@ namespace ExampleMod.Display
         }
     }
 
-    internal class ExampleBloonDisplay : ModBloonDisplay<ExampleBloon>
+    /*internal class ExampleBloonDisplay : ModBloonDisplay<ExampleBloon>
     {
         public override string BaseDisplay => GetBloonDisplay(BloonType.Lead);
 
@@ -71,7 +71,7 @@ namespace ExampleMod.Display
         public override float Scale => 1.25f;
 
         public override int Damage => 3;
-    }
+    }*/
 
     internal class MegaJuggernautDisplay : ModDisplay
     {
