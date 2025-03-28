@@ -35,6 +35,8 @@ Episode 11: [UI Part 1](https://youtu.be/8oMlZi8phiM?si=yeSfUBpybYMDAktk)
 
 Episode 12: [UI Part 2](https://youtu.be/tMy-_JhKes4?si=F9IKJ55cFvB2AN8e)
 
+Episode 13: [Changing Vanilla Bloon Displays and Custom Moab](https://youtu.be/rqYJv55ji60)
+
 ## Planned Topics
 All of the topics that haven't been covered
 
