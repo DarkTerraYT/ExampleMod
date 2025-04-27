@@ -1,4 +1,5 @@
 ﻿using BTD_Mod_Helper;
+using BTD_Mod_Helper.Api;
 using BTD_Mod_Helper.Extensions;
 using HarmonyLib;
 using Il2CppAssets.Scripts.Models;
@@ -19,6 +20,10 @@ namespace ExampleMod.Patches
             if(__instance.towerModel.baseId == TowerType.DartMonkey)
             {
                 __instance.UpdatedModel(Game.instance.model.GetTower(TowerType.MonkeyVillage));
+            }
+            if(__instance.towerModel.baseId == ModContent.TowerID<ExampleMonkey>())
+            {
+                ExampleMod.ExampleMonkeysPlaced++;
             }
         }
     }

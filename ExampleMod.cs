@@ -19,6 +19,9 @@ namespace ExampleMod;
 
 public class ExampleMod : BloonsTD6Mod
 {
+    public static int ExampleMonkeysPlaced = 0;
+    public static string SaveDataKey => "ExampleMod-ExampleMonkeysPlaced";
+
     public override void OnMatchStart()
     {
         ModdedMonkeys.CreateMenu(Game.instance.model.towers.ToList());
@@ -63,6 +66,7 @@ public class ExampleMod : BloonsTD6Mod
     public override void OnMatchEnd()
     {
         ModdedMonkeys.instance.Close();
+        ExampleMonkeysPlaced = 0;
     }
 
     public override void OnApplicationStart()
