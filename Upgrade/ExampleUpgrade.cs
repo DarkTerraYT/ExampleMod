@@ -9,14 +9,15 @@ using Il2CppInterop.Runtime.InteropTypes.Arrays;
 
 namespace ExampleMod.Upgrade
 {
-    internal class ExampleUpgrade : ModUpgrade<ExampleMonkey>
+    public class ExampleUpgrade : ModUpgrade<ExampleMonkey>
     {
-        public override int Path => MIDDLE; //You can use TOP, MIDDLE or BOTTOM
+        public override int Path => MIDDLE; //You can use TOP (0), MIDDLE (1) or BOTTOM (2)
 
         public override int Tier => 1; // 1, 2, 3, 4 or 5
 
         public override int Cost => 670;
 
+        // Change stats of the tower
         public override void ApplyUpgrade(TowerModel towerModel)
         {
             var attackModel = towerModel.GetAttackModel();

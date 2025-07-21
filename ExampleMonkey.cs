@@ -6,35 +6,39 @@ using Il2CppAssets.Scripts.Models.TowerSets;
 
 namespace ExampleMod
 {
-    internal class ExampleMonkey : ModTower
+    public class ExampleMonkey : ModTower
     {
         public override TowerSet TowerSet => TowerSet.Primary;
 
-        public override string BaseTower => TowerType.SuperMonkey; // You can replace TowerType.SuperMonkey with "SuperMonkey" or "SuperMonkey-005"
+        public override string BaseTower => TowerType.SuperMonkey; // "SuperMonkey" or "SuperMonkey-005" to set the base tower to legend of the night
 
         public override int Cost => 1050;
 
-        public override string Description => "Cool Tower Dude Yes";
-
-        public override string DisplayName => "Example Monkey"; // This is by default Example Monkey as the Mod Helper automatically puts spaces in-between the uppercase letters in the class name, it is this way for Towers, Heroes, Upgrades, and Paragons
+        public override ParagonMode ParagonMode => ParagonMode.Base555;
 
         public override void ModifyBaseTowerModel(TowerModel towerModel)
         {
             var attackModel = towerModel.GetAttackModel();
-            var weaponModel = towerModel.GetWeapon(); // You can change this is towerModel.GetAttackModel().weapons[0];
+            var weaponModel = towerModel.GetWeapon(); // attackModel.weapons[0]
             var projectileModel = weaponModel.projectile;
 
-            // range
-            towerModel.range += 25;
-            attackModel.range += 25;
+            // Change Range
+            towerModel.IncreaseRange(10); // increase towerModel range by 10 and all attack model ranges by 10
 
-            // attack speed
-            weaponModel.rate *= 3;
+            /* Set the range to 20
+            towerModel.range = 20;
+            attackModel.range = 20;
+            */
 
-            // damage + pierce
-            projectileModel.pierce = 10;
-            projectileModel.GetDamageModel().damage = 4;
+            // Attack speed (in seconds)
+            weaponModel.rate /= 3; // 3x as fast
 
+            // Damage + Pierce
+            projectileModel.pierce = 3; // Can hit 4 bloons at once
+            var damageModel = projectileModel.GetDamageModel();
+            damageModel.damage += 2; // Increase the damage by 2
+
+            // Displays
             towerModel.ApplyDisplay<ExampleMonkeyDisplay>();
             projectileModel.ApplyDisplay<ExampleProjectileDisplay>();
         }

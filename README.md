@@ -39,11 +39,11 @@ Episode 13: [Changing Vanilla Bloon Displays and Custom Moab](https://youtu.be/r
 
 Episode 14: [Saving Mod Data](https://youtu.be/La5xuNZXSds)
 
+Episode 15: [Towers Part 2](https://youtu.be/ytJ1ZCqvibw)
+
 ## Planned Topics
 All of the topics that haven't been covered
 
 Extracting the Game's Textures
-
-Towers P2
 
 [![Requires BTD6 Mod Helper](https://raw.githubusercontent.com/gurrenm3/BTD-Mod-Helper/master/banner.png)](https://github.com/gurrenm3/BTD-Mod-Helper#readme)
