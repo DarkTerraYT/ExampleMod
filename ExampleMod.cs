@@ -14,6 +14,7 @@ using Il2CppAssets.Scripts.Models;
 
 [assembly: MelonInfo(typeof(ExampleMod.ExampleMod), ModHelperData.Name, ModHelperData.Version, ModHelperData.RepoOwner)]
 [assembly: MelonGame("Ninja Kiwi", "BloonsTD6")]
+[assembly: MelonOptionalDependencies("PathsPlusPlus")]
 
 namespace ExampleMod;
 
