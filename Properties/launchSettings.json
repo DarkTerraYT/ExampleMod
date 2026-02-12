@@ -3,14 +3,14 @@
     "BloonsTD6": {
       "commandName": "Executable",
       "executablePath": "$(BloonsTD6)/BloonsTD6.exe",
-      "commandLineArgs": "moddingDev",
-      "workingDirectory": "$(BloonsTD6)"
+      "workingDirectory": "$(BloonsTD6)",
+      "commandLineArgs": "moddingDev"
     },
     "BloonsTD6 (ML Debug)": {
       "commandName": "Executable",
       "executablePath": "$(BloonsTD6)/BloonsTD6.exe",
-      "commandLineArgs": "--melonloader.debug",
-      "workingDirectory": "$(BloonsTD6)"
+      "workingDirectory": "$(BloonsTD6)",
+      "commandLineArgs": "moddingDev --melonloader.debug"
     }
   }
 }
